@@ -16,9 +16,9 @@ class Presenter {
             counterView.showToast("Поздравляем!")
         }
         if (model.count == 15) {
-            counterView.turnGreen(Color.GREEN)
+            counterView.textColor(Color.GREEN)
         } else {
-            counterView.turnGreen(Color.BLACK)
+            counterView.textColor(Color.BLACK)
         }
     }
 
@@ -29,13 +29,13 @@ class Presenter {
             counterView.showToast("Поздравляем!")
         }
         if (model.count == 15) {
-            counterView.turnGreen(Color.GREEN)
+            counterView.textColor(Color.GREEN)
         } else {
-            counterView.turnGreen(Color.BLACK)
+            counterView.textColor(Color.BLACK)
         }
     }
 
-    fun fillCounterView(counterView: CounterView) {
+    fun filledCounterView(counterView: CounterView) {
         this.counterView = counterView
     }
 }

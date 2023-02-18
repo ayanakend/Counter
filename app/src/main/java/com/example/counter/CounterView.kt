@@ -5,5 +5,5 @@ interface CounterView {
 
     fun showToast(msg:String)
 
-    fun turnGreen(color:Int)
+    fun textColor(color:Int)
 }

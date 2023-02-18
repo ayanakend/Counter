@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity(), CounterView {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        presenter.fillCounterView(this)
+        presenter.filledCounterView(this)
         initClicker()
     }
 
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity(), CounterView {
         toast.show()
     }
 
-    override fun turnGreen(color: Int) {
+    override fun textColor(color: Int) {
         binding.tvCount.setTextColor(color)
     }
 }
